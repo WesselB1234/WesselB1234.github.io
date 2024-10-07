@@ -20,6 +20,7 @@ nav{
 
     width: inherit;
     height: 70px; 
+    margin-bottom: 70px;
     border-bottom: 1px rgb(207, 207, 207) solid; 
 }
 
@@ -68,20 +69,19 @@ nav > ul > li > a:not(.green-btn){
 */
 
 footer{
-    height: 90px;
-    background-color: rgb(86, 94, 97);
+    height: 140px;
+    background-color: rgb(63, 69, 71);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 footer > *{
-    margin: 0 9% 0 9%;
+    margin: 0 9% 0 9%
 }
 
-footer > img{
-    width: 62px;
-    height: 62px;
+footer *{
+    list-style-type: none;
 }
 
 footer > p{
@@ -89,16 +89,32 @@ footer > p{
     color:#e2e2e2;
 }
 
-footer > ul{
-    text-align: center;
+#footerSocialMediaList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-footer > ul > li{
-    display: inline;
-    margin-right: 20px;
+#footerSocialMediaList > li > a > img{
+    width: 45px;
+    height: 45px;
 }
 
-footer > ul > li > a{
+#footerTxtList{
+    display: flex;
+    flex-direction: column;
+}
+
+#footerTxtList > li{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#footerTxtList > li > a{
+    display: flex;
+    justify-items: center;
+    
     color:#e2e2e2;
     text-decoration: none;
+    list-style: none;
 }
