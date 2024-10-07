@@ -1,0 +1,104 @@
+:root{
+    --greenBtnColor: #1ba500;
+}
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+/*
+    NAV
+*/
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: inherit;
+    height: 70px; 
+    border-bottom: 1px rgb(207, 207, 207) solid; 
+}
+
+nav > a{
+    width: 62px;
+    height: 62px;
+    margin-left: 100px; 
+}
+
+nav > a > img{
+    height: 100%;
+    width: 100%;
+}
+
+nav > ul{ 
+    display: flex;
+    justify-content: flex-end;
+    height: min-content;
+    flex-grow: 1; 
+}
+
+nav > ul > li{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+nav > ul > li:last-child{
+    margin-right: 130px;
+}
+
+nav > ul > li > a:not(.green-btn){
+    text-decoration: none;
+    color: black;
+}
+
+.green-btn{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    background-color: var(--greenBtnColor);
+} 
+
+/*
+    FOOTER
+*/
+
+footer{
+    height: 90px;
+    background-color: rgb(86, 94, 97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > *{
+    margin: 0 9% 0 9%;
+}
+
+footer > img{
+    width: 62px;
+    height: 62px;
+}
+
+footer > p{
+    text-align: center;
+    color:#e2e2e2;
+}
+
+footer > ul{
+    text-align: center;
+}
+
+footer > ul > li{
+    display: inline;
+    margin-right: 20px;
+}
+
+footer > ul > li > a{
+    color:#e2e2e2;
+    text-decoration: none;
+}
