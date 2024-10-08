@@ -23,6 +23,11 @@
     padding: 0;
 }
 
+img{
+    width: 100px;
+    height: 100px;
+}
+
 /*
     BUTTONS
 */
@@ -133,7 +138,7 @@ footer > p{
 }
 
 #footer-social-media-list > li > a > img{
-    width: 40px;
+    width: 35px;
     height: auto;
     margin: 0 10px 0 10px;
     border-radius: 10px;
@@ -157,4 +162,73 @@ footer > p{
     color:#e2e2e2;
     text-decoration: none;
     list-style: none;
+}
+
+/*
+
+HEADER
+
+*/
+
+header{
+    position: relative;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+header > img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -20;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+/*
+
+ABOUT US
+
+*/
+
+#aboutus-section{
+    height: 400px;
+    background-color: var(--secondary-color-light);
+}
+
+/*
+
+SALES
+
+*/
+
+#sales-section{
+    height: 400px;
+}
+
+/*
+
+HOME TRUCKS
+
+*/
+
+#home-trucks-section{
+    height: 400px;
+    background-color: var(--secondary-color-light);
+}
+
+
+/*
+
+WORK
+
+*/
+
+#work-section{
+    height: 400px;
+    background-color: #FFA7A7;
 }
