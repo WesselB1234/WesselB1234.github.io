@@ -41,25 +41,27 @@ h1{
 
 .header-description{
     font-size: 1.5em;
+    font-weight: 600;
 }
 
 /*
     BUTTONS
 */
 
-.secondary-btn{
+.secondary-btn, .primary-btn{
+    display: inline-block;
     text-decoration: none;
     padding: 10px 20px 10px 20px;
-    background-color: var(--primary-color-light);
     border-radius: 8px;
+} 
+
+.secondary-btn{
+    background-color: var(--primary-color-light);
     color: var(--text-color);
 } 
 
 .primary-btn{
-    text-decoration: none;
-    padding: 10px 20px 10px 20px;
     background-color: var(--primary-color-default);
-    border-radius: 8px;
     color: var(--light-text-color);
 }
 
@@ -127,7 +129,7 @@ nav > ul > li > a:not(.secondary-btn){
 footer{
     text-wrap: nowrap;
     height: 140px;
-    background-color: rgb(63, 69, 71);
+    background-color: rgb(47, 51, 53);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,9 +213,35 @@ ABOUT US
 
 */
 
-#aboutus-section{
+.article-panel{
     height: 400px;
     background-color: var(--secondary-color-light);
+    display: flex;
+}
+
+.article-panel > aside{
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.article-panel > aside > img{
+    width: auto;
+    height: 80%;
+}
+
+.article-panel > article{
+    flex-basis: 60%;
+}
+
+.article-panel > article > *{
+    margin-left: 50px;
+}
+
+.article-panel > article > h3{
+    margin-top: 20px;
 }
 
 /*
