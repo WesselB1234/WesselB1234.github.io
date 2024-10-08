@@ -39,6 +39,10 @@ h1{
     font-size: 3.5em;
 }
 
+h2{
+    font-size: 2.3em;
+}
+
 .header-description{
     font-size: 1.5em;
     font-weight: 600;
@@ -219,6 +223,11 @@ ABOUT US
     display: flex;
 }
 
+.article-panel.bottom-border{
+    border-bottom-left-radius: 3.5em;
+    border-bottom-right-radius: 3.5em;
+}
+
 .article-panel > aside{
     flex-grow: 1;
 
@@ -249,7 +258,7 @@ ABOUT US
 .sub-header-holder{
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100px;
+    margin-left: 30px;
 }
 
 .article-panel > article > .primary-btn{
@@ -266,6 +275,17 @@ SALES
     height: 400px;
 }
 
+#sales-holder{
+    display: flex;
+    justify-content: center;
+}
+
+#sales-section > .primary-btn{
+    display: block;
+    width: max-content;
+    margin: auto;
+}
+
 /*
 
 HOME TRUCKS
@@ -273,10 +293,27 @@ HOME TRUCKS
 */
 
 #home-trucks-section{
+    border-top-left-radius: 3.5em;
+    border-top-right-radius: 3.5em;
+
     height: 400px;
     background-color: var(--secondary-color-light);
 }
 
+#home-trucks-section > .sub-header-holder{
+    margin-top: 30px;
+}
+
+#home-trucks-holder{
+    display: flex;
+    justify-content: center;
+}
+
+#home-trucks-section > .primary-btn{
+    display: block;
+    width: max-content;
+    margin: auto;
+}
 
 /*
 
@@ -287,4 +324,13 @@ WORK
 #work-section{
     height: 250px;
     background-color: var(--secondary-color-dark);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#work-section > .secondary-btn{
+    margin-top: 20px;
 }
