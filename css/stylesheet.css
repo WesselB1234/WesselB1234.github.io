@@ -43,9 +43,17 @@ h2{
     font-size: 2.3em;
 }
 
+h3{
+    font-size: 1.75em;
+}
+
 .header-description{
     font-size: 1.5em;
     font-weight: 600;
+}
+
+.accent1{
+    color:var(--accent-color1)
 }
 
 /*
@@ -285,19 +293,44 @@ SALES
 
 */
 
-#sales-section{
-    height: 400px;
-}
-
 #sales-holder{
     display: flex;
     justify-content: center;
+    align-items:baseline;
+    gap: 13%;
+}
+
+#sales-holder > figure{
+    background-color: var(--primary-color-light);
+    width: 220px;
+    border-radius: .8em;
+    padding: 15px 0 15px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    border: 1px rgb(186, 186, 186) solid;
+    word-break:break-all;
+}
+
+#sales-holder > figure > img{
+    width: 85%;
+    height: auto;
+    align-self: center;
+    border-radius: .8em;
+}
+
+#sales-holder > figure > *:not(img){
+    margin-left: 15px;
+    width: calc(100% - 30px);
 }
 
 #sales-section > .primary-btn{
     display: block;
     width: max-content;
     margin: auto;
+    margin-top: 40px;
 }
 
 /*
