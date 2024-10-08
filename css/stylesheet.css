@@ -64,7 +64,7 @@ nav > ul > li > a:not(.green-btn){
     color: black;
 }
 
-.green-btn{
+.secondary-btn{
     text-decoration: none;
     color: #fff;
     padding: 10px 20px 10px 20px;
@@ -96,28 +96,28 @@ footer > p{
     color:#e2e2e2;
 }
 
-#footerSocialMediaList{
+#footer-social-media-list{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#footerSocialMediaList > li > a > img{
+#footer-social-media-list > li > a > img{
     width: 45px;
     height: 45px;
 }
 
-#footerTxtList{
+#footer-txt-list{
     display: flex;
     flex-direction: column;
 }
 
-#footerTxtList > li{
+#footer-txt-list > li{
     margin-top: 8px;
     margin-bottom: 8px;
 }
 
-#footerTxtList > li > a{
+#footer-txt-list > li > a{
     display: flex;
     justify-items: center;
     
