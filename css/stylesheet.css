@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root{
     --primary-color-default: #FB2323;
     --primary-color-dark: #DE1818;
@@ -13,8 +16,8 @@
     --dark-text-color: #000000;
     --light-text-color: #fff;
     
-    font-family: Arial;
     color: var(--dark-text-color);
+    font-family: "Roboto", sans-serif;
 }
 
 *{
@@ -26,6 +29,18 @@
 img{
     width: 100px;
     height: 100px;
+}
+
+h1,h2,h3,h4,h5,h6, .header-description{
+    font-family: "Quicksand", sans-serif;
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+.header-description{
+    font-size: 1.5em;
 }
 
 /*
@@ -68,6 +83,7 @@ nav{
     height: 65px; 
     border-bottom: 1px rgb(216, 216, 216) solid;
     background-color: #fff;
+    z-index: 9999;
 }
 
 nav > a{
@@ -229,6 +245,6 @@ WORK
 */
 
 #work-section{
-    height: 400px;
-    background-color: #FFA7A7;
+    height: 250px;
+    background-color: var(--secondary-color-dark);
 }
