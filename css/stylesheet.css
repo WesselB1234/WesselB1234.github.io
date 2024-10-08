@@ -53,6 +53,7 @@ h2{
 */
 
 .secondary-btn, .primary-btn{
+    transition: all .2s ease-in-out;
     display: inline-block;
     text-decoration: none;
     padding: 10px 20px 10px 20px;
@@ -67,6 +68,14 @@ h2{
 .primary-btn{
     background-color: var(--primary-color-default);
     color: var(--light-text-color);
+}
+
+.secondary-btn:hover{
+    background-color: #f09999;
+}
+
+.primary-btn:hover{
+    background-color: #DE1818;
 }
 
 /*
@@ -124,6 +133,11 @@ nav > ul > li:last-child{
 nav > ul > li > a:not(.secondary-btn){
     text-decoration: none;
     color: black;
+    transition: .2s all ease-in-out
+}
+
+nav > ul > li > a:not(.secondary-btn):hover{
+    color: var(--primary-color-default);
 }
 
 /*
