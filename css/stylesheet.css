@@ -90,6 +90,7 @@ nav > ul > li > a:not(.secondary-btn){
 */
 
 footer{
+    text-wrap: nowrap;
     height: 140px;
     background-color: rgb(63, 69, 71);
     display: flex;
@@ -111,17 +112,21 @@ footer > p{
 }
 
 #footer-social-media-list{
+    width: 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #footer-social-media-list > li > a > img{
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: auto;
+    margin: 0 12px 0 12px;
+    border-radius: 10px;
 }
 
 #footer-txt-list{
+    width: 0;
     display: flex;
     flex-direction: column;
 }
