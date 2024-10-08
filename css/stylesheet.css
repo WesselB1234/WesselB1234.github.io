@@ -1,14 +1,16 @@
 :root{
-    --primary-color: #1ba500;
-    --primary-color-light: #1ba500;
-    --primary-color-dark: #1ba500;
+    --primary-color-default: #FB2323;
+    --primary-color-dark: #DE1818;
+    --primary-color-light: #FFA7A7;
 
-    --secondary-color: #1ba500;
-    --secondary-color-light: #1ba500;
-    --secondary-color-dark: #1ba500;
+    --secondary-color-default: #FFDED6;
+    --secondary-color-dark: #F1D1C9;
+    --secondary-color-light: #FFEEEA;
 
-    --accentColor: #1ba500;
-    --textColor: #1ba500;
+    --accent-color1: #1EA604;
+    --accent-color2: #FF0000;
+
+    --text-color: #000000;
     
     font-family: Arial;
 }
@@ -42,14 +44,15 @@ nav{
 }
 
 nav > a{
-    width: 62px;
-    height: 62px;
+    width: 55px;
+    height: 55px;
     margin-left: 100px; 
 }
 
 nav > a > img{
     height: 100%;
     width: 100%;
+    border-radius: 12px;
 }
 
 nav > ul{ 
@@ -76,9 +79,10 @@ nav > ul > li > a:not(.secondary-btn){
 
 .secondary-btn{
     text-decoration: none;
-    color: #fff;
     padding: 10px 20px 10px 20px;
-    background-color: var(--greenBtnColor);
+    background-color: var(--primary-color-light);
+    border-radius: 15px;
+    color: var(--text-color);
 } 
 
 /*
