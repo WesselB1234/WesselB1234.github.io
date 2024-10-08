@@ -230,6 +230,7 @@ ABOUT US
 .article-panel > aside > img{
     width: auto;
     height: 80%;
+    border-radius: 1em;
 }
 
 .article-panel > article{
@@ -240,7 +241,18 @@ ABOUT US
     margin-left: 50px;
 }
 
-.article-panel > article > h3{
+.article-panel > article > p{
+    width: 65%;
+    margin-top: 20px;
+}
+
+.sub-header-holder{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+}
+
+.article-panel > article > .primary-btn{
     margin-top: 20px;
 }
 
