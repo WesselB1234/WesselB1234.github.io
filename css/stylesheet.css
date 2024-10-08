@@ -10,15 +10,37 @@
     --accent-color1: #1EA604;
     --accent-color2: #FF0000;
 
-    --text-color: #000000;
+    --dark-text-color: #000000;
+    --light-text-color: #fff;
     
     font-family: Arial;
+    color: var(--dark-text-color);
 }
 
 *{
     border: 0;
     margin: 0;
     padding: 0;
+}
+
+/*
+    BUTTONS
+*/
+
+.secondary-btn{
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    background-color: var(--primary-color-light);
+    border-radius: 8px;
+    color: var(--text-color);
+} 
+
+.primary-btn{
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    background-color: var(--primary-color-default);
+    border-radius: 8px;
+    color: var(--light-text-color);
 }
 
 /*
@@ -77,14 +99,6 @@ nav > ul > li > a:not(.secondary-btn){
     color: black;
 }
 
-.secondary-btn{
-    text-decoration: none;
-    padding: 10px 20px 10px 20px;
-    background-color: var(--primary-color-light);
-    border-radius: 15px;
-    color: var(--text-color);
-} 
-
 /*
     FOOTER
 */
@@ -121,7 +135,7 @@ footer > p{
 #footer-social-media-list > li > a > img{
     width: 40px;
     height: auto;
-    margin: 0 12px 0 12px;
+    margin: 0 10px 0 10px;
     border-radius: 10px;
 }
 
