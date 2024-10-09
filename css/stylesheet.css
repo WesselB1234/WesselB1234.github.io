@@ -109,13 +109,13 @@ nav{
     z-index: 9999;
 }
 
-nav > a{
+nav > figure{
     width: 55px;
     height: 55px;
     margin-left: 100px; 
 }
 
-nav > a > img{
+nav > figure > img{
     height: 100%;
     width: 100%;
     border-radius: 12px;
@@ -280,7 +280,7 @@ ABOUT US
 .sub-header-holder{
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .article-panel > article > .primary-btn{
@@ -354,12 +354,62 @@ HOME TRUCKS
 #home-trucks-holder{
     display: flex;
     justify-content: center;
+    gap: 3.5%;
+}
+
+#home-trucks-holder > figure {
+    width: 390px;
+    border-radius: 1em;
+    display: flex;
+    background-color: var(--primary-color-light);
+}
+
+#home-trucks-holder > figure > aside{
+    flex-basis: 50%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#home-trucks-holder > figure > aside > img{
+    border-radius: 1em;
+    display: block;
+    width: 82.5%;
+    height: auto;
+    padding: 30px 0 30px 0;
+}
+
+#home-trucks-holder > figure > article{
+    flex-grow: 1;
+}
+
+#home-trucks-holder > figure > article > strong{
+    display: block;
+    margin-top: 30px;
+}
+
+.loc-p{
+    margin-top: 10px;
+}
+
+.loc-p span{
+    display: block;
+}
+
+.time-p{
+    margin-top: 10px;
+}
+
+.time-p em{
+    display: block;
+    color: var(--accent-color1);
 }
 
 #home-trucks-section > .primary-btn{
     display: block;
     width: max-content;
     margin: auto;
+    margin-top: 40px;
 }
 
 /*
