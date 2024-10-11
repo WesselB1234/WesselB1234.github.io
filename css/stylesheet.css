@@ -231,6 +231,18 @@ header > img{
     overflow-x: hidden;
 }
 
+header > h1{
+    color: var(--neutral-light-color);
+    -webkit-text-stroke: .11em var(--neutral-dark-color);
+    paint-order: stroke fill;
+}
+
+header > .header-description{
+    color: var(--neutral-light-color);
+    -webkit-text-stroke: .2em var(--neutral-dark-color);
+    paint-order: stroke fill;
+}
+
 /*
 
 ABOUT US
