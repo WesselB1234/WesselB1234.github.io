@@ -6,14 +6,20 @@
     --primary-color-dark: #FB2323;
     --primary-color-light: #FFEEEA;
 
+    --primary-color-default-hover: #ffbdbd;
+
     --secondary-color-default: #363636;
     --secondary-color-light: #F1D1C9;
+
+    --secondary-color-default-hover: #545454;
 
     --accent-color1: #1EA604;
 
     --neutral-dark-color: #000000;
     --neutral-light-color: #fff;
     --neutral-grey-color: #95A5A6;
+
+    --shadow-color: #c1c1c1;
     
     color: var(--neutral-dark-color);
     font-family: "Roboto", sans-serif;
@@ -77,11 +83,11 @@ h3{
 }
 
 .secondary-btn:hover{
-    background-color: #f09999;
+    background-color: var(--primary-color-default-hover);
 }
 
 .primary-btn:hover{
-    background-color: #DE1818;
+    background-color: var(--secondary-color-default-hover);
 }
 
 .shadow-effect{
@@ -107,7 +113,7 @@ nav{
     width: 100%;
     height: 65px; 
     border-bottom: 1px rgb(216, 216, 216) solid;
-    background-color: #fff;
+    background-color: var(--neutral-light-color);
     z-index: 9999;
 }
 
@@ -173,7 +179,7 @@ footer *{
 
 footer > p{
     text-align: center;
-    color:#e2e2e2;
+    color: var(--neutral-light-color);
 }
 
 #footer-social-media-list{
@@ -205,7 +211,7 @@ footer > p{
     display: flex;
     justify-items: center;
     
-    color:#e2e2e2;
+    color: var(--neutral-light-color);
     text-decoration: none;
     list-style: none;
 }
