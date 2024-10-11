@@ -90,6 +90,10 @@ h3{
     background-color: var(--secondary-color-default-hover);
 }
 
+.secondary-btn.on-nav-selected{
+    border: 2px solid var(--primary-color-dark)
+}
+
 .shadow-effect{
     box-shadow: 4px 4px 5px #c1c1c1;
 }
@@ -150,7 +154,7 @@ nav > ul > li:last-child{
 nav > ul > li > a:not(.secondary-btn){
     text-decoration: none;
     color: black;
-    transition: .2s all ease-in-out
+    transition: .2s all ease-in-out;
 }
 
 nav > ul > li > a:not(.secondary-btn):hover{
