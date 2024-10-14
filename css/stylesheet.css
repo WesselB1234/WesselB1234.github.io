@@ -121,11 +121,15 @@ input[type=text],input[type=email]{
 .top-border{
     border-top-left-radius: 3.5em;
     border-top-right-radius: 3.5em;
+
+    background-color: var(--primary-color-light);
 }
 
 .bottom-border{
     border-bottom-left-radius: 3.5em;
     border-bottom-right-radius: 3.5em;
+
+    background-color: var(--primary-color-light);
 }
 
 /*
@@ -301,7 +305,6 @@ ABOUT US
 
 .article-panel{
     height: 400px;
-    background-color: var(--primary-color-light);
     display: flex;
 }
 
