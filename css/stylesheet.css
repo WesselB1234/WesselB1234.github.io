@@ -61,6 +61,10 @@ h3{
     color:var(--accent-color1)
 }
 
+.accent2{
+    color:var(--primary-color-dark)
+}
+
 input[type=text],input[type=email]{
     border-width: 1px;
     border-color: var(--neutral-grey-color);
@@ -504,7 +508,7 @@ MENU
 }
 
 #menu > *{
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 #menu-filters{
@@ -581,4 +585,82 @@ MENU
 
 #products-holder > figure > figcaption > p{
     line-height: 25px;
+}
+
+/*
+
+TRUCKS
+
+*/
+
+#trucks {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#truck-holder > section{
+    margin-bottom: 80px;
+    height: 300px;
+    display: flex;
+}
+
+#truck-holder > section > article{
+    flex-basis: 60%;
+    flex-shrink: 0;
+    min-width: min-content;
+    text-wrap: nowrap;
+
+    display: flex;
+    align-items: last baseline;
+    justify-content: end;
+
+    text-indent: 1em;
+    line-height: 1.4em;
+}
+
+#truck-holder > section > article > figure{
+    display: flex;
+    background-color: var(--primary-color-light);
+    width: 60%;
+    margin-right: 80px;
+
+    padding: 20px 20px 20px 20px;
+    border-radius: 1em;
+}
+
+#truck-holder > section > article > figure > aside{
+    flex-basis: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#truck-holder > section > article > figure > aside > img{
+    display: block;
+    width: 95%;
+    height: auto;
+    border-radius: 1em;
+}
+
+#truck-holder > section > article > figure > article{
+    flex-grow: 1;
+}
+
+#truck-holder > section > article > figure > figcaption > h4{
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+#truck-holder > section > figure{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+}
+
+#truck-holder > section > figure > img{
+    display: block;
+    width: 90%;
+    height: 100%;
+    background-color: red;
 }
