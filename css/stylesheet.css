@@ -91,7 +91,9 @@ h3{
 }
 
 .secondary-btn.on-nav-selected{
-    border: 2px solid var(--primary-color-dark)
+    border-width: 2px;
+    border-style: solid; 
+    border-color: var(--primary-color-dark);
 }
 
 .shadow-effect{
@@ -363,6 +365,13 @@ SALES
     margin-top: 40px;
 }
 
+#sales-holder > figure{
+    letter-spacing: 0.01em;
+    line-height: 1.5em;
+    text-indent: 0;
+    word-spacing: .1em;
+}
+
 /*
 
 HOME TRUCKS
@@ -460,4 +469,36 @@ WORK
 
 #work-section > .secondary-btn{
     margin-top: 20px;
+}
+
+/*
+    
+MENU
+
+*/
+
+#menu{
+    background-color: var(--primary-color-light);
+    display: flex;
+}
+
+#menu-filters{
+    flex-basis: 200px;
+}
+
+#main-menu-holder{
+    flex-grow: 1;
+}
+
+#main-menu-holder > input{
+    float: left;
+}
+
+#main-menu-holder > ul{
+    float: right;
+    display: flex;
+}
+
+#products-holder{
+    display: flex;
 }
