@@ -509,8 +509,7 @@ MENU
 
 #menu-filters{
     flex-basis: 275px;
-    flex-shrink:0;
-    background-color: #1EA604;
+    flex-shrink: 0;
 }
 
 #menu-filters > figure{
@@ -518,10 +517,6 @@ MENU
     margin: auto;
     background-color: var(--neutral-light-color);
     border-radius: 1em;
-    
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--neutral-grey-color);
 }
 
 #menu-filters > figure > ul{
@@ -542,13 +537,16 @@ MENU
 
 #main-menu-holder > input{
     float: left;
-    width: 300px;
+    width: 275px;
     margin-left: 100px;
 }
 
 #main-menu-holder > ul{
     float: right;
     display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-right: 100px;
 }
 
 #products-holder{
