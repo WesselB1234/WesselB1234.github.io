@@ -132,6 +132,12 @@ input[type=text],input[type=email]{
     background-color: var(--primary-color-light);
 }
 
+.sub-header-holder{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
 /*
     NAV
 */
@@ -313,6 +319,13 @@ ABOUT US
 
     display: flex;
     align-items: center;
+}
+
+.article-panel.left > aside{
+    justify-content: left;
+}
+
+.article-panel.right > aside{
     justify-content: right;
 }
 
@@ -326,19 +339,21 @@ ABOUT US
     flex-basis: 60%;
 }
 
-.article-panel > article > *{
+.article-panel > article > p,.sub-header-holder{
+   width: 65%; 
+}
+
+.article-panel.left > article > *{
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.article-panel.right > article > *{
     margin-left: 50px;
 }
 
 .article-panel > article > p{
-    width: 65%;
     margin-top: 20px;
-}
-
-.sub-header-holder{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 50px;
 }
 
 .article-panel > article > .primary-btn{
