@@ -65,11 +65,12 @@ h3{
     color:var(--primary-color-dark)
 }
 
-input[type=text],input[type=email]{
+input[type=text],input[type=email],textarea,select{
     border-width: 1px;
     border-color: var(--neutral-grey-color);
     border-style: solid;
-    border-radius: 3em;
+    border-radius: 1em;
+    
     padding: 10px 10px 10px 10px;
 }
 
@@ -557,6 +558,7 @@ MENU
     float: left;
     width: 275px;
     margin-left: 100px;
+    border-radius: 3em;
 }
 
 #main-menu-holder > ul{
@@ -785,4 +787,63 @@ EMPLOYEES
     width: 50px;
     height: auto;
     border-radius: 200em;
+}
+
+/*
+    CONTACT
+*/
+
+header.contact-mode{
+    height: 1100px;
+}
+
+header.contact-mode > img{
+    width: 150%;
+    height: auto;
+}
+
+#contact-form{
+    width: 400px;
+    background-color: var(--primary-color-light);
+    margin-top: 60px;
+    margin-bottom: 100px;
+    padding: 30px;
+    border-radius: 1em;
+}
+
+#contact-form > fieldset > ul{
+    width: 400px;
+    /*
+        WHY DOES TEXTAREA BREAK THIS WHEN I DONT USE PX?
+    */
+}
+
+#contact-form > fieldset > ul > li{
+    list-style: none;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#contact-form > fieldset > ul > li > *{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input[type=text], #contact-form input[type=email], #contact-form textarea {
+    width: calc(100% - 2em);
+    padding-left: 0;
+    padding-right: 0;
+    padding: 1em;
+}
+
+#contact-form select{
+    width: 75%;
+}
+
+#contact-form textarea{
+    height: 120px;
+}
+
+#contact-form input[type=submit]{
+    width: 100%;
 }
