@@ -1,0 +1,5 @@
+Student name: Wessel Nicolaas Beun
+Student number: 729848 
+Student class: INF1a
+GitHub Repository: https://github.com/WesselB1234/WesselB1234.github.io
+GitHub Pages URL: https://wesselb1234.github.io/index.html
