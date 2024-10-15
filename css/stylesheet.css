@@ -420,11 +420,7 @@ HOME TRUCKS
 */
 
 #home-trucks-section{
-    border-top-left-radius: 3.5em;
-    border-top-right-radius: 3.5em;
-
     height: 435px;
-    background-color: var(--primary-color-light);
 }
 
 #home-trucks-section > .sub-header-holder{
@@ -682,3 +678,57 @@ TRUCKS
     height: 100%;
     background-color: red;
 }
+
+/*
+
+ABOUT US
+
+*/
+
+.two-images{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 7%;
+    height: 400px;
+}
+
+.two-images > img{
+    width: auto;
+    height: 85%;
+    border-radius: 1em;
+}
+
+/*
+
+EMPLOYEES
+
+*/
+
+#employee-requirements-section{
+    height: 330px;
+    overflow: hidden;
+}
+
+#employee-requirements{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#employee-requirements > article{
+    flex-grow: 1;
+    flex-basis: 0;
+
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+}
+
+#employee-requirements-section > a{
+    display: block;
+    width: max-content;
+    margin: auto;
+    margin-top: 25px;
+}
+
