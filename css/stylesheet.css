@@ -670,15 +670,14 @@ TRUCKS
 #truck-holder > section > figure{
     flex-grow: 1;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: last baseline;
 }
 
 #truck-holder > section > figure > img{
     display: block;
-    width: 90%;
-    height: 100%;
-    background-color: red;
+    width: auto;
+    height: 110%;
 }
 
 /*
