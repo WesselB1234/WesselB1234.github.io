@@ -807,7 +807,7 @@ header.contact-mode > img{
     background-color: var(--primary-color-light);
     margin-top: 60px;
     margin-bottom: 100px;
-    padding: 30px;
+    padding: 12px 30px 12px 30px;
     border-radius: 1em;
 }
 
@@ -846,4 +846,10 @@ header.contact-mode > img{
 
 #contact-form input[type=submit]{
     width: 100%;
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        background-color: #1EA604;
+    }
 }
