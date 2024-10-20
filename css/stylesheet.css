@@ -2,18 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root{
-    --primary-color-default: #FFA7A7;
+    --primary-color-default: #FFCBCB;
     --primary-color-dark: #FB2323;
     --primary-color-light: #FFEEEA;
 
     --primary-color-default-hover: #ffbdbd;
 
     --secondary-color-default: #363636;
-    --secondary-color-light: #F1D1C9;
+    --secondary-color-light: #F3DEDE;
 
     --secondary-color-default-hover: #545454;
 
-    --accent-color1: #1EA604;
+    --accent-color1: #76A66D;
+    --accent-color1-hover: #7CBD6F;
 
     --neutral-dark-color: #000000;
     --neutral-light-color: #fff;
@@ -87,12 +88,12 @@ input[type=text],input[type=email],textarea,select{
 } 
 
 .secondary-btn{
-    background-color: var(--primary-color-default);
-    color: var(--neutral-dark-color);
+    background-color: var(--secondary-color-default);
+    color: var(--neutral-light-color);
 } 
 
 .primary-btn{
-    background-color: var(--secondary-color-default);
+    background-color: var(--accent-color1);
     color: var(--neutral-light-color);
 }
 
@@ -102,17 +103,11 @@ input[type=text],input[type=email],textarea,select{
 }
 
 .secondary-btn:hover{
-    background-color: var(--primary-color-default-hover);
-}
-
-.primary-btn:hover{
     background-color: var(--secondary-color-default-hover);
 }
 
-.secondary-btn.on-nav-selected{
-    border-width: 2px;
-    border-style: solid; 
-    border-color: var(--primary-color-dark);
+.primary-btn:hover{
+    background-color: var(--accent-color1-hover);
 }
 
 .shadow-effect{
@@ -192,18 +187,19 @@ nav > ul > li:last-child{
     margin-right: 120px;
 }
 
-nav > ul > li > a:not(.secondary-btn){
+nav > ul > li > a:not(.primary-btn){
     text-decoration: none;
     color: black;
     transition: .2s all ease-in-out;
 }
 
-nav > ul > li > a:not(.secondary-btn):hover{
+nav > ul > li > a:not(.primary-btn):hover{
     color: var(--primary-color-dark);
 }
 
 .nav-selected{
     background-color: var(--primary-color-light);
+    border-radius: 1em;
 }
 
 /*
@@ -836,7 +832,7 @@ header.contact-mode > img{
 }
 
 #contact-form select{
-    width: 75%;
+    width: 50%;
 }
 
 #contact-form textarea{
