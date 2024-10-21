@@ -138,10 +138,6 @@ input[type=text],input[type=email],textarea,select{
     NAV
 */
 
-body:nth-child(2){
-    margin-top: 65px;
-}
-
 #main-nav{
     position: fixed;
     display: flex;
@@ -154,7 +150,7 @@ body:nth-child(2){
     height: 65px; 
     border-bottom: 1px rgb(216, 216, 216) solid;
     background-color: var(--neutral-light-color);
-    z-index: 9999;
+    z-index: 999;
 }
 
 #main-nav > figure{
@@ -183,8 +179,12 @@ body:nth-child(2){
     padding: 0 10px 0 10px;
 }
 
-#main-nav > ul > li:last-child{
+#main-nav > .pc-nav > li:last-child{
     margin-right: 120px;
+}
+
+#main-nav > .mobile-nav > li:last-child{
+    margin-right: 75px;
 }
 
 #main-nav > ul > li > a:not(.primary-btn){
@@ -219,7 +219,6 @@ body:nth-child(2){
     justify-content: space-evenly;
     align-items: center;
 
-    margin-right: 50px;
     cursor: pointer;
 }
 
@@ -232,25 +231,55 @@ body:nth-child(2){
 }
 
 #hamburger-menu-nav{
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     z-index: 99999;
     pointer-events: none;
+
+    top: 0;
+    left: 0;
 }
 
-#hamburger-menu-nav > ul{
+#hamburger-menu-nav > figure{
     display: none;
-    background-color: #000000;
+    height: 100%;
+    background-color: var(--primary-color-default);
     pointer-events: all;
+}
+
+#hamburger-menu-nav > figure > ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 70%;
+    list-style: none;
+}
+
+#hamburger-menu-nav > figure > ul > li > a{
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+
+#hamburger-menu-nav > figure > aside{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 80px;
+}
+
+#hamburger-menu-nav > figure > aside > *{
+    margin-right: 75px;
 }
 
 #menu-toggle{
     display: none;
 }
 
-#menu-toggle:checked ~ ul{
-    background-color: aqua;
+#menu-toggle:checked ~ figure{
     display: block;
 }
 
@@ -328,6 +357,8 @@ header{
     justify-content: center;
     align-items: center;
     overflow:hidden;
+
+    margin-top: 65px;
 }
 
 header > img{
