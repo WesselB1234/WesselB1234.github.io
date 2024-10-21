@@ -649,7 +649,7 @@ TRUCKS
 
 #truck-holder > section > article > figure > aside > img{
     display: block;
-    width: 95%;
+    width: 100%;
     height: auto;
     border-radius: 1em;
 }
@@ -673,7 +673,7 @@ TRUCKS
 #truck-holder > section > figure > img{
     display: block;
     width: auto;
-    height: 110%;
+    height: 115%;
 }
 
 /*
