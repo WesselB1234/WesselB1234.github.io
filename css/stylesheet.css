@@ -186,7 +186,7 @@ body:nth-child(3){
 }
 
 #main-nav > .pc-nav > li:last-child{
-    margin-right: 120px;
+    margin-right: 110px;
 }
 
 #main-nav > .mobile-nav > li:last-child{
@@ -928,14 +928,14 @@ header.contact-mode > img{
     RESPONSIVENESS
 */
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 768px){
     
     #hamburger-menu-nav{
         display: none;
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 768px){
 
     #main-nav > .pc-nav{
         display: none;
@@ -943,8 +943,4 @@ header.contact-mode > img{
     #main-nav > .mobile-nav{
         display: inline-flex;
     }
-}
-
-@media screen and (max-width: 768px){
-
 }
