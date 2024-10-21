@@ -242,8 +242,8 @@ body:nth-child(2){
 }
 
 #menu-toggle:checked ~ #hamburger-menu-nav{
-    display: block;
     background-color: aqua;
+    display: block;
 }
 
 /*
@@ -890,6 +890,12 @@ header.contact-mode > img{
 /*
     RESPONSIVENESS
 */
+
+@media screen and (min-width: 1000px){
+    #hamburger-menu-nav{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 1000px){
     #main-nav > .pc-nav{
