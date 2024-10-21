@@ -202,11 +202,11 @@ body:nth-child(2){
     border-radius: 1em;
 }
 
-#mobile-nav{
+#main-nav > .mobile-nav{
     display: none;
 }
 
-#pc-nav{
+#main-nav > .pc-nav{
     display: inline-flex;
 }
 
@@ -235,7 +235,6 @@ body:nth-child(2){
     display: none;
     position: absolute;
     background-color: #000000;
-    width: 100%;
 }
 
 #menu-toggle{
@@ -244,6 +243,7 @@ body:nth-child(2){
 
 #menu-toggle:checked ~ #hamburger-menu-nav{
     display: block;
+    background-color: aqua;
 }
 
 /*
@@ -892,10 +892,10 @@ header.contact-mode > img{
 */
 
 @media screen and (max-width: 1000px){
-    #pc-nav{
+    #main-nav > .pc-nav{
         display: none;
     }
-    #mobile-nav{
+    #main-nav > .mobile-nav{
         display: inline-flex;
     }
 
