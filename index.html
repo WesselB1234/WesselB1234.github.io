@@ -5,6 +5,7 @@
     <meta name="keywords" content="Pizza, home, trucks, employees, aboutus, summary, welcome" />
     <meta name="description" content="The homepage of The Roaming Pizza Trucks" />
     <meta name="author" content="Wessel Beun (729848)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="icon" type="image/x-icon" href="img/Logo.png" /> 
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
@@ -16,7 +17,8 @@
         <figure>
             <img src="img/Logo.png" alt="Roaming Pizza Trucks logo" title="Main logo" />
         </figure>
-        <ul>
+
+        <ul id="pc-nav">
             <li class="nav-selected">
                 <a href="index.html">
                     Home
@@ -48,6 +50,47 @@
                 </a>
             </li> 
         </ul>
+
+        <ul id="mobile-nav">
+            <figure class="burger-menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </figure>
+        </ul>
+
+        <figure id="hamburger-menu-nav">
+            <li>
+                <a class="secondary-btn" href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a class="secondary-btn" href="menu.html">
+                    Menu
+                </a>
+            </li>
+            <li>
+                <a class="secondary-btn" href="trucks.html">
+                    Trucks
+                </a>
+            </li>
+            <li>
+                <a class="secondary-btn" href="aboutus.html">
+                    About us
+                </a>
+            </li>
+            <li>
+                <a class="secondary-btn" href="employees.html">
+                    Employees
+                </a>
+            </li>
+            <li>
+                <a class="primary-btn" href="contact.html">
+                    Contact
+                </a>
+            </li> 
+        </figure>
     </nav>
 
     <header>
