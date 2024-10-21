@@ -12,11 +12,12 @@
     <title>Trucks</title>
 </head>
 <body>
-    <nav>
+    <nav id="main-nav">
         <figure>
             <img src="img/Logo.png" alt="Roaming Pizza Trucks logo" title="Main logo" />
         </figure>
-        <ul>
+
+        <ul class="pc-nav">
             <li>
                 <a href="index.html">
                     Home
@@ -27,7 +28,7 @@
                     Menu
                 </a>
             </li>
-            <li class="nav-selected">
+            <li class="nav-selected">  
                 <a href="trucks.html">
                     Trucks
                 </a>
@@ -39,6 +40,52 @@
             </li>
             <li>
                 <a href="employees.html">
+                    Employees
+                </a>
+            </li>
+            <li>
+                <a class="primary-btn" href="contact.html">
+                    Contact
+                </a>
+            </li> 
+        </ul>
+
+        <ul class="mobile-nav">
+            <li>
+                <label class="burger-menu-icon" for="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-menu-nav">
+        <input type="checkbox" id="menu-toggle" />                   
+        <ul>
+            <li>
+                <a class="secondary-btn" href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a class="secondary-btn" href="menu.html">
+                    Menu
+                </a>
+            </li>
+            <li>
+                <a class="secondary-btn" href="trucks.html">
+                    Trucks
+                </a>
+            </li>
+            <li>
+                <a class="secondary-btn" href="aboutus.html">
+                    About us
+                </a>
+            </li>
+            <li>
+                <a class="secondary-btn" href="employees.html">
                     Employees
                 </a>
             </li>

@@ -920,21 +920,19 @@ header.contact-mode > img{
 */
 
 @media screen and (min-width: 1000px){
+    
     #hamburger-menu-nav{
         display: none;
     }
 }
 
 @media screen and (max-width: 1000px){
+
     #main-nav > .pc-nav{
         display: none;
     }
     #main-nav > .mobile-nav{
         display: inline-flex;
-    }
-
-    footer{
-        display: none;
     }
 }
 
