@@ -613,7 +613,7 @@ MENU
 }
 
 #menu-filters > figure{
-    width: 80%;
+    width: 220px;
     margin: auto;
     background-color: var(--neutral-light-color);
     border-radius: 1em;
@@ -659,6 +659,7 @@ MENU
 }
 
 #products-holder > figure{
+    flex-shrink: 0;
     width: 240px;
     background-color: var(--neutral-light-color);
     border-radius: 1em;
@@ -697,36 +698,37 @@ TRUCKS
 
 #truck-holder > section{
     margin-bottom: 80px;
-    height: 300px;
+    height: max-content;
     display: flex;
 }
 
 #truck-holder > section > article{
-    flex-basis: 60%;
+    flex-basis: 55%;
     flex-shrink: 0;
-    min-width: min-content;
-    text-wrap: nowrap;
-
+    
     display: flex;
     align-items: last baseline;
     justify-content: end;
-
-    text-indent: 1em;
-    line-height: 1.4em;
 }
 
 #truck-holder > section > article > figure{
     display: flex;
     background-color: var(--primary-color-light);
-    width: 60%;
+    width: max-content;
+    height: max-content;
     margin-right: 80px;
 
     padding: 20px 20px 20px 20px;
     border-radius: 1em;
+
+    min-width: min-content;
+    text-wrap: nowrap;
+    text-indent: 1em;
+    line-height: 1.4em;
 }
 
 #truck-holder > section > article > figure > aside{
-    flex-basis: 27%;
+    width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -757,8 +759,8 @@ TRUCKS
 
 #truck-holder > section > figure > img{
     display: block;
-    width: auto;
-    height: 115%;
+    width: 73%;
+    height: auto;
 }
 
 /*
@@ -1001,5 +1003,37 @@ header.contact-mode > img{
         flex-direction: column;
         width: 80%;
         margin: auto;
+    }
+
+    #menu{
+        flex-direction: column;
+    }
+
+    #menu-filters{
+        flex-basis: max-content;
+    }
+
+    #truck-holder > section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: max-content;
+    }
+
+    #truck-holder > section > article{
+        padding:20px
+    }
+
+    #truck-holder > section > article > figure{
+        margin:auto;
+    }
+    
+    #truck-holder > section > figure{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #truck-holder > section > figure > img{
+        width: 70%
     }
 }
