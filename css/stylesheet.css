@@ -993,4 +993,10 @@ header.contact-mode > img{
     .two-images{
         flex-direction: column;
     }
+
+    #employee-requirements{
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
 }
