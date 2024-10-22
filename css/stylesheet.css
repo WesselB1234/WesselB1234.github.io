@@ -34,11 +34,6 @@
     padding: 0;
 }
 
-img{
-    width: 100px;
-    height: 100px;
-}
-
 h1,h2,h3,h4,h5,h6, .header-description{
     font-family: "Quicksand", sans-serif;
 }
@@ -293,6 +288,7 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    text-wrap: wrap;
 }
 
 footer *{
@@ -385,8 +381,9 @@ ABOUT US
 */
 
 .article-panel{
-    height: 400px;
+    height: max-content;
     display: flex;
+    padding-bottom: 30px;
 }
 
 .article-panel > aside{
@@ -397,6 +394,7 @@ ABOUT US
 }
 
 .article-panel.left > aside{
+    order: 2;
     justify-content: left;
 }
 
@@ -406,8 +404,9 @@ ABOUT US
 
 .article-panel > aside > img{
     width: auto;
-    height: 85%;
+    height: 300px;
     border-radius: 1em;
+    margin: 20px;
 }
 
 .article-panel > article{
@@ -447,9 +446,11 @@ SALES
     justify-content: center;
     align-items:baseline;
     gap: 13%;
+    overflow-y: hidden;
 }
 
 #sales-holder > figure{
+    flex-shrink: 0;
     background-color: var(--primary-color-default);
     width: 220px;
     border-radius: .8em;
@@ -495,7 +496,8 @@ HOME TRUCKS
 */
 
 #home-trucks-section{
-    height: 435px;
+    height: max-content;
+    padding-bottom: 30px;
 }
 
 #home-trucks-section > .sub-header-holder{
@@ -505,11 +507,13 @@ HOME TRUCKS
 #home-trucks-holder{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 3.5%;
 }
 
 #home-trucks-holder > figure {
     width: 390px;
+    margin-top: 30px;
     border-radius: 1em;
     display: flex;
     background-color: var(--primary-color-default);
@@ -763,15 +767,20 @@ ABOUT US
 .two-images{
     display: flex;
     justify-content: center;
-    align-items: baseline;
-    gap: 7%;
-    height: 400px;
+    align-items: center;
+    flex-direction: row;
+    height: max-content;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+
+    gap: 5%;
 }
 
 .two-images > img{
     width: auto;
-    height: 85%;
+    height: 300px;
     border-radius: 1em;
+    margin: 20px;
 }
 
 /*
@@ -956,5 +965,32 @@ header.contact-mode > img{
 
     #footer-txt-list{
         order: 3;
+    }
+
+    .article-panel{
+        flex-direction: column;
+    }
+    .article-panel.left > aside,.article-panel.right > aside {
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        order: 1;
+    }
+    .article-panel.left > article, .article-panel.right > article{
+        width: 70%;
+        margin: auto;
+    }
+
+    .article-panel.left > article > *,.article-panel.right > article > *{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .article-panel > article > p,.sub-header-holder{
+        width: 100%;
+    }
+
+    .two-images{
+        flex-direction: column;
     }
 }
