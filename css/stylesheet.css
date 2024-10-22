@@ -510,6 +510,8 @@ HOME TRUCKS
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+
+    gap: 15px;
 }
 
 #home-trucks-holder > figure {
@@ -987,7 +989,7 @@ header.contact-mode > img{
         margin-right: 0;
     }
 
-    .article-panel > article > p,.sub-header-holder{
+    .article-panel > article > p, .article-panel > article > .sub-header-holder{
         width: 100%;
     }
 
