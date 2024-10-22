@@ -659,7 +659,7 @@ MENU
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    margin-top: 75px;
+    margin-top: 50px;
 }
 
 #products-holder > figure{
