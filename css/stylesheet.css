@@ -354,7 +354,7 @@ header{
 
 header > img{
     position: absolute;
-    width: 100%;
+    width: calc(100% + 310px);
     height: auto;
     z-index: -20;
     margin: auto;
@@ -885,7 +885,7 @@ header.contact-mode{
 }
 
 header.contact-mode > img{
-    width: 150%;
+    width: calc(100% + 1450px);
     height: auto;
 }
 
