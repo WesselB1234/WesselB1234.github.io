@@ -635,25 +635,29 @@ MENU
     flex-grow: 1;
 }
 
-#main-menu-holder > input{
-    float: left;
-    width: 275px;
-    margin-left: 100px;
-    border-radius: 3em;
-}
-
 #main-menu-holder > ul{
-    float: right;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     list-style: none;
-    margin-right: 100px;
+}
+
+#menu-search-bar-parent{
+    flex-basis: 100%;
+    border-radius: 3em;
+    text-align: center;
+}
+
+#menu-search-bar{
+    width: 300px;
 }
 
 #products-holder{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     flex-wrap: wrap;
     margin-top: 75px;
 }
@@ -1012,6 +1016,13 @@ header.contact-mode > img{
     #menu-filters{
         flex-basis: max-content;
     }
+
+    /* #menu-search-bar{
+        display: inline-block;
+        width: 0;
+        
+        background-color: aqua;
+    } */
 
     #truck-holder > section{
         flex-direction: column;
