@@ -443,10 +443,12 @@ SALES
 
 #sales-holder{
     display: flex;
-    justify-content: center;
-    align-items:baseline;
-    gap: 13%;
+    align-items: baseline;
+    justify-content: space-evenly;
     overflow-y: hidden;
+    padding-bottom: 10px;
+
+    gap: 25px;
 }
 
 #sales-holder > figure{
@@ -460,7 +462,7 @@ SALES
     flex-direction: column;
     gap: 10px;
 
-    word-break:break-all;
+    word-break: break-all;
 }
 
 #sales-holder > figure > img{
@@ -506,9 +508,8 @@ HOME TRUCKS
 
 #home-trucks-holder{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 3.5%;
 }
 
 #home-trucks-holder > figure {
