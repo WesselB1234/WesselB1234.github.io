@@ -414,7 +414,8 @@ header > .header-description{
 }
 
 .article-panel > article > p,.sub-header-holder{
-   width: 65%; 
+   width: 80%;
+   max-width: 600px; 
 }
 
 .article-panel.left > article > *{
@@ -792,16 +793,13 @@ header > .header-description{
 #employee-requirements{
     margin-top: 35px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: baseline;
 }
 
 #employee-requirements > article{
-    flex-grow: 1;
-    flex-basis: 0;
-
-    margin-left: 3.5%;
-    margin-right: 3.5%;
+    flex-basis: 30%;
+    max-width: 500px;
 }
 
 #employee-requirements > article > h4{
