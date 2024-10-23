@@ -72,10 +72,6 @@ input[type=text],input[type=email],textarea,select{
     padding: 10px 10px 10px 10px;
 }
 
-body:nth-child(3){
-    margin-top: var(--nav-height);
-}
-
 /*
     OTHER PAGE CLASSES
 */
@@ -354,7 +350,7 @@ header{
     align-items: center;
     overflow:hidden;
 
-    margin-top: 65px;
+    margin-top: var(--nav-height);
 }
 
 header > img{
