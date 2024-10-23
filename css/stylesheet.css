@@ -21,7 +21,7 @@
     --neutral-grey-color: #95A5A6;
 
     --shadow-color: #c1c1c1;
-
+    --nav-bottom-border-color: rgb(216, 216, 216);
     --nav-height: 65px;
     
     color: var(--neutral-dark-color);
@@ -146,12 +146,14 @@ body:nth-child(3){
     justify-content: center;
 
     top: 0;
-
     width: 100%;
-    height: var(--nav-height); 
-    border-bottom: 1px rgb(216, 216, 216) solid;
-    background-color: var(--neutral-light-color);
     z-index: 999;
+    height: var(--nav-height); 
+
+    background-color: var(--neutral-light-color);
+    border-bottom-width: 1px;
+    border-bottom-color: var(--nav-bottom-border-color);
+    border-bottom-style: solid;
 }
 
 #main-nav > figure{
