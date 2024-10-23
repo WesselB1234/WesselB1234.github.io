@@ -1025,11 +1025,13 @@ header.contact-mode > img{
     }
 
     #truck-holder > section > article{
-        padding:20px
+        padding-bottom: 20px;
+        align-items: left;
+        justify-content: center;
     }
 
     #truck-holder > section > article > figure{
-        margin:auto;
+        margin: 0;
     }
     
     #truck-holder > section > figure{
