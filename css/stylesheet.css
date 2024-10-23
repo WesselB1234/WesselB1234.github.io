@@ -340,6 +340,11 @@ footer > p{
 
 header{
     position: relative;
+
+    /*
+        Z-index wont work without the position being relative due to image being absolute
+    */
+
     height: 350px;
     display: flex;
     flex-direction: column;
