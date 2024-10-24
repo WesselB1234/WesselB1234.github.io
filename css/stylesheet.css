@@ -39,10 +39,6 @@ h1,h2,h3,h4,h5,h6, .header-description{
     font-family: "Quicksand", sans-serif;
 }
 
-h1{
-    font-size: 3.5rem;
-}
-
 h2{
     font-size: 2.3rem;
 }
@@ -896,13 +892,12 @@ header.contact-mode h1{
     margin-bottom: 100px;
     padding: 12px 30px 12px 30px;
     border-radius: 16px;
+
+    font-size: 1rem;
 }
 
 #contact-form > fieldset > ul{
     max-width: 100%;
-    /*
-        WHY DOES TEXTAREA BREAK THIS WHEN I DONT USE PX?
-    */
 }
 
 #contact-form > fieldset > ul > li{
