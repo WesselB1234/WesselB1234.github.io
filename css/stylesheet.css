@@ -964,6 +964,9 @@ header.contact-mode h1{
     }
 }
 
+/* 
+    Nav, footer and trucks seem to break when under 900px. They are unable to meet the 768px responsiveness requirement
+*/
 @media screen and (max-width: 900px){
 
     /*
@@ -997,6 +1000,39 @@ header.contact-mode h1{
     #footer-txt-list{
         order: 3;
     }
+
+    /*
+        TRUCKS
+    */
+
+    #truck-holder > section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: max-content;
+    }
+
+    #truck-holder > section > article{
+        padding-bottom: 20px;
+        align-items: left;
+        justify-content: center;
+    }
+
+    #truck-holder > section > article > figure{
+        margin: 0;
+    }
+    
+    #truck-holder > section > figure{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #truck-holder > section > figure > img{
+        width: 70%
+    }
+}
+
+@media screen and (max-width: 768px){
 
     /*
         ARTICLE PANELS
@@ -1035,36 +1071,6 @@ header.contact-mode h1{
 
     #menu-filters{
         flex-basis: max-content;
-    }
-
-    /*
-        TRUCKS
-    */
-
-    #truck-holder > section{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: max-content;
-    }
-
-    #truck-holder > section > article{
-        padding-bottom: 20px;
-        align-items: left;
-        justify-content: center;
-    }
-
-    #truck-holder > section > article > figure{
-        margin: 0;
-    }
-    
-    #truck-holder > section > figure{
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #truck-holder > section > figure > img{
-        width: 70%
     }
 
     /*
