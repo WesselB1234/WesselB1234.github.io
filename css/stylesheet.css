@@ -129,6 +129,11 @@ input[type=text],input[type=email],textarea,select{
     margin-left: 50px;
 }
 
+.sub-header-holder:first-letter{
+    color: var(--accent-color1);
+    font-size: 1.5em;
+}
+
 /*
     NAV
 */
