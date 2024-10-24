@@ -23,7 +23,8 @@
     --accent-color1-hover: #7CBD6F;
 
     --neutral-dark-color: #000000;
-    --neutral-light-color: #fff;
+    --neutral-light-color: #FFF;
+    --neutral-light-dark-color: #CFF;
     --neutral-grey-color: #95A5A6;
 
     --shadow-color: #c1c1c1;
@@ -663,8 +664,15 @@ header > .header-description{
 #products-holder > figure{
     flex-shrink: 0;
     width: 240px;
-    background-color: var(--neutral-light-color);
     border-radius: 16px;
+}
+
+#products-holder > figure:nth-child(even){
+    background-color: var(--neutral-light-color);
+}
+
+#products-holder > figure:nth-child(odd){
+    background-color: var(--neutral-light-dark-color);
 }
 
 #products-holder > figure > img{
