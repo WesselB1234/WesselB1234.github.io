@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
 :root{
     --primary-color-default: #FFCBCB;
     --primary-color-dark: #FB2323;
@@ -26,12 +32,7 @@
     
     color: var(--neutral-dark-color);
     font-family: "Roboto", sans-serif;
-}
-
-*{
-    border: 0;
-    margin: 0;
-    padding: 0;
+    font-size: 1rem;
 }
 
 h1,h2,h3,h4,h5,h6, .header-description{
@@ -39,19 +40,19 @@ h1,h2,h3,h4,h5,h6, .header-description{
 }
 
 h1{
-    font-size: 3.5em;
+    font-size: 3.5rem;
 }
 
 h2{
-    font-size: 2.3em;
+    font-size: 2.3rem;
 }
 
 h3{
-    font-size: 1.75em;
+    font-size: 1.75rem;
 }
 
 .header-description{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -67,7 +68,7 @@ input[type=text],input[type=email],textarea,select{
     border-width: 1px;
     border-color: var(--neutral-grey-color);
     border-style: solid;
-    border-radius: 1em;
+    border-radius: 16px;
     
     padding: 10px 10px 10px 10px;
 }
@@ -112,15 +113,15 @@ input[type=text],input[type=email],textarea,select{
 }
 
 .top-border{
-    border-top-left-radius: 3.5em;
-    border-top-right-radius: 3.5em;
+    border-top-left-radius: 56px;
+    border-top-right-radius: 56px;
 
     background-color: var(--primary-color-light);
 }
 
 .bottom-border{
-    border-bottom-left-radius: 3.5em;
-    border-bottom-right-radius: 3.5em;
+    border-bottom-left-radius: 56px;
+    border-bottom-right-radius: 56px;
 
     background-color: var(--primary-color-light);
 }
@@ -198,7 +199,7 @@ input[type=text],input[type=email],textarea,select{
 
 .nav-selected{
     background-color: var(--primary-color-light);
-    border-radius: 1em;
+    border-radius: 16px;
 }
 
 #main-nav > .mobile-nav{
@@ -226,7 +227,7 @@ input[type=text],input[type=email],textarea,select{
     background-color: var(--secondary-color-default);
     width: 100%;
     height: 3px;
-    border-radius: 1em;
+    border-radius: 16px;
     z-index: 999999;
 }
 
@@ -351,6 +352,8 @@ header{
     overflow:hidden;
 
     margin-top: var(--nav-height);
+
+    font-size: 3.5rem;
 }
 
 header > img{
@@ -364,14 +367,16 @@ header > img{
 
 header > h1,header > .header-description{
    color: var(--neutral-light-color); 
+   font-size: .5em;
 }
 
 header > h1{
+    font-size: 1em;
     text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px;
     /* 
         For some reason do some browsers not support text strokes so I had to implement this workaround text shadow trick
     
-        -webkit-text-stroke: .11em var(--neutral-dark-color); 
+        -webkit-text-stroke: .11rem var(--neutral-dark-color); 
         What I previously used to get the text stroke right ^
     */
 }
@@ -408,7 +413,7 @@ header > .header-description{
 .article-panel > aside > img{
     width: auto;
     height: 300px;
-    border-radius: 1em;
+    border-radius: 16px;
     margin: 20px;
 }
 
@@ -457,7 +462,7 @@ header > .header-description{
     flex-shrink: 0;
     background-color: var(--primary-color-default);
     width: 220px;
-    border-radius: .8em;
+    border-radius: 13px;
     padding: 15px 0 15px 0;
 
     display: flex;
@@ -471,7 +476,7 @@ header > .header-description{
     width: 85%;
     height: auto;
     align-self: center;
-    border-radius: .8em;
+    border-radius: 13px;
 }
 
 #sales-holder > figure > *:not(img){
@@ -487,10 +492,10 @@ header > .header-description{
 }
 
 #sales-holder > figure{
-    letter-spacing: 0.01em;
-    line-height: 1.5em;
+    letter-spacing: 0.01rem;
+    line-height: 1.5rem;
     text-indent: 0;
-    word-spacing: .1em;
+    word-spacing: 0.1rem;
 }
 
 /*
@@ -517,7 +522,7 @@ header > .header-description{
 #home-trucks-holder > figure {
     width: 390px;
     margin-top: 30px;
-    border-radius: 1em;
+    border-radius: 16px;
     display: flex;
     background-color: var(--primary-color-default);
 }
@@ -530,7 +535,7 @@ header > .header-description{
 }
 
 #home-trucks-holder > figure > aside > img{
-    border-radius: .8em;
+    border-radius: 13px;
     display: block;
     width: 82.5%;
     height: auto;
@@ -612,7 +617,7 @@ header > .header-description{
     width: 220px;
     margin: auto;
     background-color: var(--neutral-light-color);
-    border-radius: 1em;
+    border-radius: 16px;
 }
 
 #menu-filters > figure > ul{
@@ -642,7 +647,7 @@ header > .header-description{
 
 #menu-search-bar-parent{
     flex-basis: 100%;
-    border-radius: 3em;
+    border-radius: 48px;
     text-align: center;
 }
 
@@ -662,7 +667,7 @@ header > .header-description{
     flex-shrink: 0;
     width: 240px;
     background-color: var(--neutral-light-color);
-    border-radius: 1em;
+    border-radius: 16px;
 }
 
 #products-holder > figure > img{
@@ -673,11 +678,11 @@ header > .header-description{
 
     margin-top: 25px;
     margin-bottom: 10px;
-    border-radius: 1em;
+    border-radius: 16px;
 }
 
 #products-holder > figure > figcaption{
-    text-indent: 1em;
+    text-indent: 16px;
     padding-bottom: 10px;
 }
 
@@ -717,12 +722,12 @@ header > .header-description{
     margin-right: 80px;
 
     padding: 20px 20px 20px 20px;
-    border-radius: 1em;
+    border-radius: 16px;
 
     min-width: min-content;
     text-wrap: nowrap;
-    text-indent: 1em;
-    line-height: 1.4em;
+    text-indent: 1rem;
+    line-height: 1.4rem;
 }
 
 #truck-holder > section > article > figure > aside{
@@ -736,7 +741,7 @@ header > .header-description{
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 1em;
+    border-radius: 16px;
 }
 
 #truck-holder > section > article > figure > article{
@@ -744,8 +749,8 @@ header > .header-description{
 }
 
 #truck-holder > section > article > figure > figcaption > h4{
-    font-size: 1.5em;
-    line-height: 2em;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 #truck-holder > section > figure{
@@ -780,7 +785,7 @@ header > .header-description{
 .two-images > img{
     width: auto;
     height: 300px;
-    border-radius: 1em;
+    border-radius: 16px;
     margin: 20px;
 }
 
@@ -806,12 +811,12 @@ header > .header-description{
 }
 
 #employee-requirements > article > h4{
-    font-size: 1.3em;
-    line-height: 1.8em;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
 }
 
 #employee-requirements > article > strong{
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 #employee-requirements-section > a{
@@ -843,7 +848,7 @@ header > .header-description{
     text-wrap: wrap;
     flex-shrink: 0;
     
-    border-radius: 1em;
+    border-radius: 16px;
     border-width: 2px;
     border-color: var(--accent-color1);
     border-style: solid;
@@ -851,8 +856,8 @@ header > .header-description{
 }
 
 #quotes-holder > figure > strong{
-    line-height: 1.2em;
-    font-size: 1.3em;
+    line-height: 1.2rem;
+    font-size: 1.3rem;
 }
 
 #quotes-holder > figure > figure{
@@ -864,7 +869,7 @@ header > .header-description{
     margin-right: 10px;
     width: 50px;
     height: auto;
-    border-radius: 200em;
+    border-radius: 100%;
 }
 
 /*
@@ -890,7 +895,7 @@ header.contact-mode h1{
     margin-top: 60px;
     margin-bottom: 100px;
     padding: 12px 30px 12px 30px;
-    border-radius: 1em;
+    border-radius: 16px;
 }
 
 #contact-form > fieldset > ul{
@@ -912,10 +917,10 @@ header.contact-mode h1{
 }
 
 #contact-form input[type=text], #contact-form input[type=email], #contact-form textarea {
-    width: calc(100% - 2em);
+    width: calc(100% - 32px);
     padding-left: 0;
     padding-right: 0;
-    padding: 1em;
+    padding: 16px;
 }
 
 #contact-form select{
