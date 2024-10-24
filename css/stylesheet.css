@@ -872,7 +872,10 @@ header > .header-description{
 
 #quotes-holder > figure > figure{
     margin-top: 12px;
-    display: flex;
+}
+
+#quotes-holder > figure > figure > *{
+    float: left;
 }
 
 #quotes-holder > figure > figure > img{
