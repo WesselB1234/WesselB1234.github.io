@@ -929,10 +929,10 @@ header.contact-mode h1{
 }
 
 #contact-form input[type=text], #contact-form input[type=email], #contact-form textarea {
-    width: calc(100% - 32px);
+    width: calc(100% - 16px);
     padding-left: 0;
     padding-right: 0;
-    padding: 16px;
+    padding: 8px;
 }
 
 #contact-form select{
