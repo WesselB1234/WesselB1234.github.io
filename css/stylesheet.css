@@ -201,6 +201,10 @@ input[type=text],input[type=email],textarea,select{
     color: var(--primary-color-dark);
 }
 
+#main-nav > ul > li > a:not(.primary-btn):active{
+    color: var(--accent-color1);
+}
+
 .nav-selected{
     background-color: var(--primary-color-light);
     border-radius: 16px;
