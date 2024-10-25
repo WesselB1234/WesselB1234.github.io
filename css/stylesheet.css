@@ -711,13 +711,13 @@ header > .header-description{
     padding-bottom: 40px;
 }
 
-#truck-holder > section{
+#truck-holder > figure{
     margin-bottom: 80px;
     height: max-content;
     display: flex;
 }
 
-#truck-holder > section > article{
+#truck-holder > figure > figcaption{
     flex-basis: 55%;
     flex-shrink: 0;
     
@@ -726,7 +726,7 @@ header > .header-description{
     justify-content: end;
 }
 
-#truck-holder > section > article > figure{
+#truck-holder > figure > figcaption > figure{
     display: flex;
     background-color: var(--primary-color-light);
     width: max-content;
@@ -742,37 +742,37 @@ header > .header-description{
     line-height: 1.4rem;
 }
 
-#truck-holder > section > article > figure > aside{
+#truck-holder > figure > figcaption > figure > aside{
     width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#truck-holder > section > article > figure > aside > img{
+#truck-holder > figure > figcaption > figure > aside > img{
     display: block;
     width: 100%;
     height: auto;
     border-radius: 16px;
 }
 
-#truck-holder > section > article > figure > article{
+#truck-holder > figure > figcaption > figure > figcaption{
     flex-grow: 1;
 }
 
-#truck-holder > section > article > figure > figcaption > h4{
+#truck-holder > figure > figcaption > figure > figcaption > h4{
     font-size: 1.5rem;
     line-height: 2rem;
 }
 
-#truck-holder > section > figure{
+#truck-holder > figure > aside{
     flex-grow: 1;
     display: flex;
     justify-content: left;
     align-items: last baseline;
 }
 
-#truck-holder > section > figure > img{
+#truck-holder > figure > aside > img{
     display: block;
     width: 73%;
     height: auto;
@@ -1007,28 +1007,28 @@ header.contact-mode h1{
         TRUCKS
     */
 
-    #truck-holder > section{
+    #truck-holder > figure{
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: max-content;
     }
 
-    #truck-holder > section > article{
+    #truck-holder > figure > figcaption{
         padding-bottom: 20px;
         justify-content: center;
     }
 
-    #truck-holder > section > article > figure{
+    #truck-holder > figure > figcaption > figure{
         margin: 0;
     }
     
-    #truck-holder > section > figure{
+    #truck-holder > figure > aside{
         align-items: center;
         justify-content: center;
     }
     
-    #truck-holder > section > figure > img{
+    #truck-holder > figure > aside > img{
         width: 70%
     }
 }
