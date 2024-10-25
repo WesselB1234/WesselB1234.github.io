@@ -36,7 +36,7 @@
     font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6, .header-description{
+h1,h2,h3,h4,h5,h6,.header-description{
     font-family: "Quicksand", sans-serif;
 }
 
@@ -45,25 +45,7 @@ h2{
 }
 
 h3{ 
-    margin-top: 40px;
     font-size: 1.75rem;
-    margin-left: 50px;
-}
-
-h3:first-letter{
-    color: var(--accent-color1);
-    font-size: 2.25rem;
-}
-
-.sub-header-description{
-    display: block;
-    margin-bottom: 20px;
-    margin-left: 50px;
-}
-
-.header-description{
-    font-size: 1.5rem;
-    font-weight: 600;
 }
 
 .accent1{
@@ -390,8 +372,25 @@ footer > p{
     */
 }
 
+.header-description{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 #main-header > .header-description{
-    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;}
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+}
+
+.sub-header{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.sub-header:first-letter{
+    color: var(--accent-color1);
+    font-size: 1.5em;
+}
 
 /*
     ABOUT US
@@ -430,7 +429,7 @@ footer > p{
     flex-basis: 60%;
 }
 
-.article-panel > article > p, .article-panel > article > h3{
+.article-panel > article > p, .article-panel > article > .sub-header{
    width: 80%;
    max-width: 600px; 
 }
@@ -442,10 +441,6 @@ footer > p{
 
 .article-panel.right > article > *{
     margin-left: 50px;
-}
-
-.article-panel > article > p:not(.sub-header-description){
-    margin-top: 20px;
 }
 
 .article-panel > article > .primary-btn{
@@ -516,7 +511,7 @@ footer > p{
     padding-bottom: 30px; 
 }
 
-#home-trucks-section > h3{
+#home-trucks-section > .sub-header{
     padding-top: 40px;
 }
 
@@ -1062,7 +1057,7 @@ footer > p{
         margin-right: 0;
     }
 
-    .article-panel > article > p, .article-panel > article > h3{
+    .article-panel > article > p, .article-panel > article > .sub-header{
         width: 100%;
     }
 
