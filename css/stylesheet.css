@@ -545,11 +545,11 @@ header > .header-description{
     margin: 30px 0 30px 0;
 }
 
-#home-trucks-holder > figure > article{
+#home-trucks-holder > figure > figcaption{
     flex-grow: 1;
 }
 
-#home-trucks-holder > figure > article > strong{
+#home-trucks-holder > figure > figcaption > strong{
     display: block;
     margin-top: 30px;
 }
