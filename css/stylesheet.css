@@ -803,37 +803,37 @@ header > .header-description{
     EMPLOYEES
 */
 
-#employee-requirements-section{
+#employee-requirements{
     overflow: hidden;
     padding-bottom: 20px;
 }
 
-#employee-requirements{
+#employee-requirements > a{
+    display: block;
+    width: max-content;
+    margin: auto;
+    margin-top: 25px;
+}
+
+#employee-requirements-holder{
     margin-top: 35px;
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
 }
 
-#employee-requirements > article{
+#employee-requirements-holder > article{
     flex-basis: 30%;
     max-width: 500px;
 }
 
-#employee-requirements > article > h4{
+#employee-requirements-holder > article > h4{
     font-size: 1.3rem;
     line-height: 1.8rem;
 }
 
-#employee-requirements > article > strong{
+#employee-requirements-holder > article > strong{
     font-size: 1.5rem;
-}
-
-#employee-requirements-section > a{
-    display: block;
-    width: max-content;
-    margin: auto;
-    margin-top: 25px;
 }
 
 #quotes{
@@ -1084,7 +1084,7 @@ header.contact-mode h1{
         EMPLOYEES
     */
 
-    #employee-requirements{
+    #employee-requirements-holder{
         flex-direction: column;
         width: 80%;
         margin: auto;
