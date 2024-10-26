@@ -132,7 +132,7 @@ input[type=text], input[type=email], textarea, select{
 
     top: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 9999;
     height: var(--nav-height); 
 
     background-color: var(--neutral-light-color);
@@ -226,7 +226,7 @@ input[type=text], input[type=email], textarea, select{
     position: fixed;
     height: 100%;
     width: 100%;
-    z-index: 998;
+    z-index: 9998;
     pointer-events: none;
 
     top: 0;
