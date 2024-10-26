@@ -30,7 +30,9 @@
     --shadow-color: #c1c1c1;
     --nav-bottom-border-color: rgb(216, 216, 216);
     --nav-height: 65px;
-    
+}
+
+body{
     color: var(--neutral-dark-color);
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
